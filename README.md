@@ -30,7 +30,7 @@ This application invloved some UIKit concepts:
 
 ## Light Mode Screenshots
 <p align = "center">
-<img src="Images/home1.png" width="410"/> <img src="Images/home2.png" width="410"/>
+<img src="Images/home1.png" width="415"/> <img src="Images/home2.png" width="415"/>
 </p>
 
 <p align = "center">
