@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Manrope-ExtraBold.ttf">
+            <string>Manrope-ExtraBold</string>
+        </array>
+        <array key="Manrope-ExtraLight.ttf">
+            <string>Manrope-ExtraLight</string>
+        </array>
+        <array key="Manrope-Medium.ttf">
+            <string>Manrope-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Hayuk" customModuleProvider="target">
+            <connections>
+                <outlet property="descWorkout" destination="VzU-p6-qsq" id="A5c-P9-PaE"/>
+                <outlet property="imageWorkout" destination="xex-Yw-pnC" id="gih-pk-p3G"/>
+                <outlet property="nameWorkout" destination="Re1-GY-YLq" id="T7S-35-AoV"/>
+                <outlet property="stepsWorkout" destination="xFu-c6-NKR" id="9j1-jM-ClO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="youtubeIcon" destination="Rfb-Mi-UUx" id="hqc-P6-YtA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNt-4r-xY3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhB-Hz-QIo" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="625.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-2Q-pVc">
+                                    <rect key="frame" x="25" y="275" width="325" height="168"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-GY-YLq">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="41"/>
+                                            <fontDescription key="fontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="30"/>
+                                            <color key="textColor" name="Color: DEDEDE"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54M-qJ-hax">
+                                            <rect key="frame" x="0.0" y="54" width="87.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="16"/>
+                                            <color key="textColor" name="Color: DEDEDE"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzU-p6-qsq">
+                                            <rect key="frame" x="0.0" y="89" width="325" height="15.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="325" id="8Np-L4-3Ua"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Manrope-ExtraLight" family="Manrope" pointSize="13"/>
+                                            <color key="textColor" name="Color: 959595"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-zJ-vz2">
+                                            <rect key="frame" x="0.0" y="117.5" width="43.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="16"/>
+                                            <color key="textColor" name="Color: DEDEDE"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFu-c6-NKR">
+                                            <rect key="frame" x="0.0" y="152.5" width="325" height="15.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="325" id="uJT-L2-V79"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Manrope-ExtraLight" family="Manrope" pointSize="13"/>
+                                            <color key="textColor" name="Color: 959595"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="325" id="n0F-hU-ft0"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="X2F-La-qzd">
+                                    <rect key="frame" x="25" y="481" width="325" height="117.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Axy-OL-kxL">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="1"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button below for further steps in video form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRB-h0-CLn">
+                                            <rect key="frame" x="3" y="16" width="319" height="18"/>
+                                            <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="13"/>
+                                            <color key="textColor" name="Color: 959595"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-Mi-UUx">
+                                            <rect key="frame" x="113" y="49" width="99.5" height="37"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="gray" image="youtubeIcon" imagePlacement="leading" title="  Button">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                <fontDescription key="titleFontDescription" name="Manrope-Bold" family="Manrope" pointSize="12"/>
+                                                <color key="baseForegroundColor" name="Color: 202020"/>
+                                                <color key="baseBackgroundColor" name="Color: DEDEDE"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="redirectYoutube:" destination="-1" eventType="touchUpInside" id="YLH-0e-wPX"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Stop Until You're Proud!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaW-07-BZk">
+                                            <rect key="frame" x="80" y="101" width="165" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="325" id="hVj-DL-AYK"/>
+                                    </constraints>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xex-Yw-pnC">
+                                    <rect key="frame" x="25" y="26" width="325" height="230"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="325" id="Fyq-g3-rv2"/>
+                                        <constraint firstAttribute="height" constant="230" id="dwG-1m-QJs"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" name="Color: 202020"/>
+                            <constraints>
+                                <constraint firstItem="TEv-2Q-pVc" firstAttribute="top" secondItem="xex-Yw-pnC" secondAttribute="bottom" constant="19" id="01r-KO-6gd"/>
+                                <constraint firstItem="xex-Yw-pnC" firstAttribute="top" secondItem="qhB-Hz-QIo" secondAttribute="top" constant="26" id="4bg-jm-AuA"/>
+                                <constraint firstItem="xex-Yw-pnC" firstAttribute="centerX" secondItem="qhB-Hz-QIo" secondAttribute="centerX" id="Ny7-Hf-Jmh"/>
+                                <constraint firstItem="X2F-La-qzd" firstAttribute="centerX" secondItem="qhB-Hz-QIo" secondAttribute="centerX" id="Qyg-FL-8zD"/>
+                                <constraint firstItem="TEv-2Q-pVc" firstAttribute="centerX" secondItem="qhB-Hz-QIo" secondAttribute="centerX" id="SD2-ZY-ThZ"/>
+                                <constraint firstItem="X2F-La-qzd" firstAttribute="top" secondItem="TEv-2Q-pVc" secondAttribute="bottom" constant="38" id="StL-Bj-oDu"/>
+                                <constraint firstAttribute="bottom" secondItem="X2F-La-qzd" secondAttribute="bottom" constant="27" id="eYj-TC-IQO"/>
+                                <constraint firstItem="X2F-La-qzd" firstAttribute="top" secondItem="TEv-2Q-pVc" secondAttribute="bottom" constant="38" id="n3K-4K-eGQ"/>
+                                <constraint firstItem="X2F-La-qzd" firstAttribute="top" secondItem="TEv-2Q-pVc" secondAttribute="bottom" constant="38" id="nDX-Sy-d6D"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="tintColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qhB-Hz-QIo" secondAttribute="bottom" priority="250" id="PEJ-Sv-sYZ"/>
+                        <constraint firstItem="qhB-Hz-QIo" firstAttribute="centerY" secondItem="vNt-4r-xY3" secondAttribute="centerY" priority="250" id="V2U-AK-03m"/>
+                        <constraint firstItem="qhB-Hz-QIo" firstAttribute="leading" secondItem="vNt-4r-xY3" secondAttribute="leading" id="YfI-Ok-fvo"/>
+                        <constraint firstAttribute="trailing" secondItem="qhB-Hz-QIo" secondAttribute="trailing" id="jot-zg-PLV"/>
+                        <constraint firstItem="qhB-Hz-QIo" firstAttribute="centerX" secondItem="vNt-4r-xY3" secondAttribute="centerX" id="rRM-sw-yc1"/>
+                        <constraint firstItem="qhB-Hz-QIo" firstAttribute="top" secondItem="vNt-4r-xY3" secondAttribute="top" id="wca-aV-urw"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vNt-4r-xY3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7Qo-U9-J0a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vNt-4r-xY3" secondAttribute="bottom" id="B1O-TL-uRn"/>
+                <constraint firstItem="vNt-4r-xY3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BHc-QP-Pk1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vNt-4r-xY3" secondAttribute="trailing" id="gb3-MP-rtI"/>
+            </constraints>
+            <point key="canvasLocation" x="133.59999999999999" y="241.52923538230885"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line" width="414" height="1"/>
+        <image name="youtubeIcon" width="31" height="23"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color: 202020">
+            <color red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color: 959595">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color: DEDEDE">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a0r-BQ-9gW">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Manrope-Bold.ttf">
+            <string>Manrope-Bold</string>
+        </array>
+        <array key="Manrope-ExtraBold.ttf">
+            <string>Manrope-ExtraBold</string>
+        </array>
+        <array key="Manrope-Medium.ttf">
+            <string>Manrope-Medium</string>
+        </array>
+        <array key="Manrope-Regular.ttf">
+            <string>Manrope-Regular</string>
+        </array>
+        <array key="Manrope-SemiBold.ttf">
+            <string>Manrope-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hayuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-mA-xBa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-VC-h3V" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="622.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topBar" translatesAutoresizingMaskIntoConstraints="NO" id="gHw-Zl-lK2">
+                                                <rect key="frame" x="26" y="30" width="329" height="79"/>
+                                                <color key="tintColor" name="Color: DEDEDE"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="25l-aa-xZF">
+                                                <rect key="frame" x="29.5" y="42" width="316" height="41.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFM-Cv-pMf">
+                                                        <rect key="frame" x="0.0" y="1" width="54" height="40"/>
+                                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="iconHayuk" title=""/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyP-xJ-zHS">
+                                                        <rect key="frame" x="114" y="0.0" width="92.5" height="41.5"/>
+                                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Hayuk!">
+                                                            <fontDescription key="titleFontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIf-sV-fmo">
+                                                        <rect key="frame" x="266.5" y="1.5" width="49.5" height="39"/>
+                                                        <color key="tintColor" name="Color: 202020"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="profileIcon" title=""/>
+                                                        <connections>
+                                                            <segue destination="43M-hG-s73" kind="presentation" id="gYz-u4-Q0Q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ceP-PI-TxM">
+                                                <rect key="frame" x="30" y="132" width="315" height="103"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-aL-Tge">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="55"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwY-Qn-3dk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="27.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="tfO-xm-QJr"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="20"/>
+                                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="glad to see you here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA9-Qy-lxK">
+                                                                <rect key="frame" x="0.0" y="27.5" width="203.5" height="27.5"/>
+                                                                <fontDescription key="fontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="20"/>
+                                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-Kj-Oj5">
+                                                        <rect key="frame" x="0.0" y="62" width="315" height="41"/>
+                                                        <string key="text">Hayuk is an app that can help your your daily workout. provide some information about an easy way to do workout. In this app you can select types of workout that you want below.</string>
+                                                        <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="10"/>
+                                                        <color key="textColor" name="Color: DEDEDE"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="315" id="4Fu-Sc-L8b"/>
+                                                    <constraint firstAttribute="height" constant="103" id="ppS-hz-TNK"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select types of workout you into it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkE-j4-2wc">
+                                                <rect key="frame" x="63.5" y="259" width="248" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="15"/>
+                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Uaa-vq-cgA">
+                                                <rect key="frame" x="0.0" y="309.5" width="375" height="293"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="293" id="Y71-b9-0Hb"/>
+                                                </constraints>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Color: 202020"/>
+                                        <constraints>
+                                            <constraint firstItem="ceP-PI-TxM" firstAttribute="centerX" secondItem="h7l-VC-h3V" secondAttribute="centerX" id="4NP-n2-rel"/>
+                                            <constraint firstItem="ceP-PI-TxM" firstAttribute="top" secondItem="25l-aa-xZF" secondAttribute="bottom" constant="48.5" id="Aq5-Sv-NSY"/>
+                                            <constraint firstItem="Uaa-vq-cgA" firstAttribute="leading" secondItem="h7l-VC-h3V" secondAttribute="leading" id="Has-wk-UUV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uaa-vq-cgA" secondAttribute="bottom" constant="20" id="KdB-Xk-qQx"/>
+                                            <constraint firstItem="25l-aa-xZF" firstAttribute="centerX" secondItem="h7l-VC-h3V" secondAttribute="centerX" id="Owt-6b-zaR"/>
+                                            <constraint firstItem="gHw-Zl-lK2" firstAttribute="leading" secondItem="h7l-VC-h3V" secondAttribute="leading" constant="26" id="U5O-hF-5dD"/>
+                                            <constraint firstItem="RkE-j4-2wc" firstAttribute="top" secondItem="ceP-PI-TxM" secondAttribute="bottom" constant="24" id="VQa-O0-Rwt"/>
+                                            <constraint firstAttribute="trailing" secondItem="gHw-Zl-lK2" secondAttribute="trailing" constant="20" id="XUO-Dm-6Sp"/>
+                                            <constraint firstItem="RkE-j4-2wc" firstAttribute="centerX" secondItem="h7l-VC-h3V" secondAttribute="centerX" id="ZsR-Os-GwD"/>
+                                            <constraint firstItem="ceP-PI-TxM" firstAttribute="top" secondItem="gHw-Zl-lK2" secondAttribute="bottom" constant="23" id="f3l-jQ-Bz6"/>
+                                            <constraint firstItem="gHw-Zl-lK2" firstAttribute="top" secondItem="h7l-VC-h3V" secondAttribute="top" constant="30" id="fld-lM-b1C"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uaa-vq-cgA" secondAttribute="trailing" id="qKK-Zi-sRc"/>
+                                            <constraint firstItem="25l-aa-xZF" firstAttribute="top" secondItem="h7l-VC-h3V" secondAttribute="top" constant="42" id="tdN-eV-0e4"/>
+                                            <constraint firstItem="Uaa-vq-cgA" firstAttribute="top" secondItem="RkE-j4-2wc" secondAttribute="bottom" constant="30" id="zLp-43-7sG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h7l-VC-h3V" firstAttribute="centerY" secondItem="bcf-mA-xBa" secondAttribute="centerY" priority="250" id="9Wo-fg-oH5"/>
+                                    <constraint firstAttribute="trailing" secondItem="h7l-VC-h3V" secondAttribute="trailing" id="Lul-iK-4Fn"/>
+                                    <constraint firstItem="h7l-VC-h3V" firstAttribute="top" secondItem="bcf-mA-xBa" secondAttribute="top" id="dPp-So-4ph"/>
+                                    <constraint firstAttribute="bottom" secondItem="h7l-VC-h3V" secondAttribute="bottom" priority="250" id="h9U-RO-yHW"/>
+                                    <constraint firstItem="h7l-VC-h3V" firstAttribute="centerX" secondItem="bcf-mA-xBa" secondAttribute="centerX" id="h9Y-dP-FxL"/>
+                                    <constraint firstItem="h7l-VC-h3V" firstAttribute="leading" secondItem="bcf-mA-xBa" secondAttribute="leading" id="qjD-Sq-PDt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color: 202020"/>
+                        <constraints>
+                            <constraint firstItem="bcf-mA-xBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5db-gq-5X2"/>
+                            <constraint firstItem="bcf-mA-xBa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Z82-aD-8Tj"/>
+                            <constraint firstItem="bcf-mA-xBa" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="h2m-LE-y0Y"/>
+                            <constraint firstItem="bcf-mA-xBa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="so1-Hm-yXt"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Home" id="Iuu-CV-JCI"/>
+                    <connections>
+                        <outlet property="heightConstant" destination="Y71-b9-0Hb" id="LXX-u6-7ap"/>
+                        <outlet property="userName" destination="TwY-Qn-3dk" id="2Ma-AT-KMo"/>
+                        <outlet property="workoutTableView" destination="Uaa-vq-cgA" id="a6z-I4-ArN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="121"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="qNy-yD-pTr">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewControllerScene" id="43M-hG-s73" customClass="ProfileViewController" customModule="Hayuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRL-qJ-sbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D68-S7-h1F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2I-FN-xY8" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4605"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="b1g-Hv-KEX">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="342"/>
+                                                <color key="tintColor" name="Color: DEDEDE"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="342" id="Cos-VQ-Yd7"/>
+                                                    <constraint firstAttribute="width" constant="375" id="f8j-Nr-op7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-mt-2PW">
+                                                <rect key="frame" x="150.5" y="9" width="74" height="22"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="16"/>
+                                                <color key="textColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hai, I'm Diki Dwi Diro an iOS Developer" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkE-S8-WqA">
+                                                <rect key="frame" x="37.5" y="362" width="300" height="76.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="zRI-3Z-cJt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Manrope-ExtraBold" family="Manrope" pointSize="28"/>
+                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCROLL DOWN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYm-ik-aO2">
+                                                <rect key="frame" x="141" y="544" width="93" height="18"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="13"/>
+                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ij7-11-qph">
+                                                <rect key="frame" x="36.5" y="782" width="302" height="328"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="erU-FW-Rxn"/>
+                                                </constraints>
+                                                <string key="text">Hello, please introduce myself, I'm Diki Dwi Diro and I was born on 1st of September 2003, of course right now I'm 18 years old. I'm graduated from SMKN 1 Kota tangerang which located in Tangerang city. For now, I'm majoring in Information Technology at President University for batch 2021. I'm enthusiast on Apple environtment and excited about developing an application based on iOS platform. Hopefully, I can take a look back at this simple app that I made from Dicoding Academy in the future. Don't forget where you came from. I believe that I could become a success iOS Developer one day. Besides that, I would like to made my parents and family proud of my hardwork.</string>
+                                                <fontDescription key="fontDescription" name="Manrope-Regular" family="Manrope" pointSize="15"/>
+                                                <color key="textColor" name="Color: 959595"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="HSN-OY-WLq">
+                                                <rect key="frame" x="36.5" y="2693.5" width="302" height="600"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="iyV-OC-Te8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-bC-v1p">
+                                                <rect key="frame" x="36.5" y="3358.5" width="302" height="600"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="Tec-UZ-hQs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snK-Vf-QWT">
+                                                <rect key="frame" x="117" y="4153.5" width="141.5" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="25"/>
+                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-j8-n4o">
+                                                <rect key="frame" x="95.5" y="4269" width="184.5" height="32"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="email" title="   dikidwid0@gmail.com">
+                                                    <fontDescription key="titleFontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="13"/>
+                                                    <color key="baseForegroundColor" name="Color: 202020"/>
+                                                    <color key="baseBackgroundColor" name="Color: DEDEDE"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="emailButton:" destination="43M-hG-s73" eventType="touchUpInside" id="9a1-4h-IfH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed by Diki Dwi Diro  Copyright 2022" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPB-3v-RRu">
+                                                <rect key="frame" x="83" y="4565" width="209.5" height="13"/>
+                                                <fontDescription key="fontDescription" name="Manrope-SemiBold" family="Manrope" pointSize="11"/>
+                                                <color key="textColor" name="Color: 959595"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a lover of apple products." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVA-jS-XG5">
+                                                <rect key="frame" x="36.5" y="449" width="302" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="JzZ-zR-v0e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="15"/>
+                                                <color key="textColor" name="Color: 959595"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="LIP-hg-1XQ" userLabel="line">
+                                                <rect key="frame" x="17" y="4513" width="342" height="1"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="dqm-3n-NZJ">
+                                                <rect key="frame" x="180" y="568" width="15" height="25"/>
+                                                <color key="tintColor" name="Color: DEDEDE"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-Mz-9Dj">
+                                                <rect key="frame" x="36.5" y="2028.5" width="302" height="600"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="600" id="CIq-Oj-VDM"/>
+                                                    <constraint firstAttribute="width" constant="302" id="D9B-8L-Ito"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="photoProfile" translatesAutoresizingMaskIntoConstraints="NO" id="k8b-Jk-vaR">
+                                                <rect key="frame" x="57.5" y="40" width="260" height="260"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="260" id="CUe-nY-9Vq"/>
+                                                    <constraint firstAttribute="height" constant="260" id="QJT-c0-BEF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the button below to directly address to my email." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBG-sh-XD1">
+                                                <rect key="frame" x="70" y="4208" width="235" height="41"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Medium" family="Manrope" pointSize="15"/>
+                                                <color key="textColor" name="Color: 959595"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visuals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZn-yX-ACe">
+                                                <rect key="frame" x="144" y="1589" width="87" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="Manrope-Bold" family="Manrope" pointSize="25"/>
+                                                <color key="textColor" name="Color: DEDEDE"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XGI-EY-REB">
+                                                <rect key="frame" x="69.5" y="4515.5" width="236" height="41.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcw-mu-4cV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="41.5"/>
+                                                        <color key="tintColor" name="Color: DEDEDE"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="whatsapp"/>
+                                                        <connections>
+                                                            <action selector="whatsappButton:" destination="43M-hG-s73" eventType="touchUpInside" id="qEn-ni-CZo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECi-HY-8nE">
+                                                        <rect key="frame" x="61.5" y="0.0" width="46.5" height="41.5"/>
+                                                        <color key="tintColor" name="Color: DEDEDE"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="instagram"/>
+                                                        <connections>
+                                                            <action selector="instagramButton:" destination="43M-hG-s73" eventType="touchUpInside" id="6aG-Sc-cIA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v52-3p-NCf">
+                                                        <rect key="frame" x="123" y="0.0" width="46.5" height="41.5"/>
+                                                        <color key="tintColor" name="Color: DEDEDE"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="linkedin"/>
+                                                        <connections>
+                                                            <action selector="linkedInButon:" destination="43M-hG-s73" eventType="touchUpInside" id="eB4-Tx-2fe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSF-5R-q3y">
+                                                        <rect key="frame" x="184.5" y="0.0" width="51.5" height="41.5"/>
+                                                        <color key="tintColor" name="Color: DEDEDE"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="facebook"/>
+                                                        <connections>
+                                                            <action selector="facebookButton:" destination="43M-hG-s73" eventType="touchUpInside" id="M9p-pT-fqq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Color: 202020"/>
+                                        <constraints>
+                                            <constraint firstItem="ij7-11-qph" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="03Q-lN-XTp"/>
+                                            <constraint firstItem="xVA-jS-XG5" firstAttribute="top" secondItem="HkE-S8-WqA" secondAttribute="bottom" constant="10.5" id="2cT-xF-UEU"/>
+                                            <constraint firstItem="HkE-S8-WqA" firstAttribute="top" secondItem="b1g-Hv-KEX" secondAttribute="bottom" constant="20" id="5Rt-AR-gnk"/>
+                                            <constraint firstItem="KKV-mt-2PW" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="664-rS-xbP"/>
+                                            <constraint firstItem="xZn-yX-ACe" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="9Hi-nC-6Gr"/>
+                                            <constraint firstItem="2Da-j8-n4o" firstAttribute="top" secondItem="sBG-sh-XD1" secondAttribute="bottom" constant="20" id="9QM-fT-I2U"/>
+                                            <constraint firstItem="k8b-Jk-vaR" firstAttribute="top" secondItem="KKV-mt-2PW" secondAttribute="bottom" constant="9" id="C6b-fZ-YN5"/>
+                                            <constraint firstItem="bCA-Mz-9Dj" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="ErW-ta-tNd"/>
+                                            <constraint firstItem="sBG-sh-XD1" firstAttribute="top" secondItem="snK-Vf-QWT" secondAttribute="bottom" constant="20" id="Hby-sC-9Oe"/>
+                                            <constraint firstItem="b1g-Hv-KEX" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="KSw-xa-Md1"/>
+                                            <constraint firstItem="LIP-hg-1XQ" firstAttribute="top" secondItem="2Da-j8-n4o" secondAttribute="bottom" constant="212" id="KaW-Z4-EO3"/>
+                                            <constraint firstItem="snK-Vf-QWT" firstAttribute="top" secondItem="pGq-bC-v1p" secondAttribute="bottom" constant="195" id="Kcu-b4-3VP"/>
+                                            <constraint firstItem="xYm-ik-aO2" firstAttribute="top" secondItem="xVA-jS-XG5" secondAttribute="bottom" constant="74.5" id="LRl-7C-e2j"/>
+                                            <constraint firstAttribute="trailing" secondItem="LIP-hg-1XQ" secondAttribute="trailing" constant="16" id="OFU-vq-hs3"/>
+                                            <constraint firstItem="XGI-EY-REB" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="OYC-1B-NHm"/>
+                                            <constraint firstItem="pGq-bC-v1p" firstAttribute="top" secondItem="HSN-OY-WLq" secondAttribute="bottom" constant="65" id="Rlk-wU-Uph"/>
+                                            <constraint firstItem="b1g-Hv-KEX" firstAttribute="top" secondItem="M2I-FN-xY8" secondAttribute="top" id="S68-RB-24G"/>
+                                            <constraint firstItem="KKV-mt-2PW" firstAttribute="top" secondItem="M2I-FN-xY8" secondAttribute="top" constant="9" id="Sar-mf-vKC"/>
+                                            <constraint firstItem="xVA-jS-XG5" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="T9g-xM-hZ5"/>
+                                            <constraint firstItem="dqm-3n-NZJ" firstAttribute="top" secondItem="xYm-ik-aO2" secondAttribute="bottom" constant="6" id="Vel-TY-W6P"/>
+                                            <constraint firstItem="sBG-sh-XD1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M2I-FN-xY8" secondAttribute="leading" id="X8F-hy-ceU"/>
+                                            <constraint firstItem="tPB-3v-RRu" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="Xzq-8b-IuF"/>
+                                            <constraint firstItem="2Da-j8-n4o" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="ZIS-R0-Bne"/>
+                                            <constraint firstItem="XGI-EY-REB" firstAttribute="top" secondItem="LIP-hg-1XQ" secondAttribute="bottom" constant="1.5" id="aUb-8y-IzM"/>
+                                            <constraint firstAttribute="trailing" secondItem="sBG-sh-XD1" secondAttribute="trailing" constant="70" id="bN4-Ic-Cd8"/>
+                                            <constraint firstItem="LIP-hg-1XQ" firstAttribute="leading" secondItem="M2I-FN-xY8" secondAttribute="leading" constant="17" id="bZ5-bl-3YD"/>
+                                            <constraint firstItem="xYm-ik-aO2" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="cBX-7C-kOJ"/>
+                                            <constraint firstItem="k8b-Jk-vaR" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="cDm-ns-8cJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="tPB-3v-RRu" secondAttribute="bottom" constant="27" id="d3C-Sa-jfD"/>
+                                            <constraint firstItem="HSN-OY-WLq" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="hJd-U9-THh"/>
+                                            <constraint firstItem="dqm-3n-NZJ" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="hb0-c3-FPo"/>
+                                            <constraint firstItem="HSN-OY-WLq" firstAttribute="top" secondItem="bCA-Mz-9Dj" secondAttribute="bottom" constant="65" id="iEa-RV-Rtl"/>
+                                            <constraint firstItem="sBG-sh-XD1" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="jvx-Gf-O5M"/>
+                                            <constraint firstItem="xZn-yX-ACe" firstAttribute="top" secondItem="ij7-11-qph" secondAttribute="bottom" constant="479" id="lrC-03-Zbc"/>
+                                            <constraint firstItem="HkE-S8-WqA" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="nss-PT-gbg"/>
+                                            <constraint firstItem="tPB-3v-RRu" firstAttribute="top" secondItem="XGI-EY-REB" secondAttribute="bottom" constant="8" symbolic="YES" id="nub-IF-4ik"/>
+                                            <constraint firstItem="snK-Vf-QWT" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="s6Q-ol-HUQ"/>
+                                            <constraint firstItem="HkE-S8-WqA" firstAttribute="top" secondItem="b1g-Hv-KEX" secondAttribute="bottom" constant="20" id="tsY-ZP-O1R"/>
+                                            <constraint firstAttribute="height" constant="4605" id="vqA-rF-4b0"/>
+                                            <constraint firstItem="ij7-11-qph" firstAttribute="top" secondItem="dqm-3n-NZJ" secondAttribute="bottom" constant="189" id="vwU-W2-R7q"/>
+                                            <constraint firstItem="pGq-bC-v1p" firstAttribute="centerX" secondItem="M2I-FN-xY8" secondAttribute="centerX" id="zPL-55-BzW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="M2I-FN-xY8" firstAttribute="centerX" secondItem="D68-S7-h1F" secondAttribute="centerX" id="8ti-pW-4gm"/>
+                                    <constraint firstItem="M2I-FN-xY8" firstAttribute="leading" secondItem="D68-S7-h1F" secondAttribute="leading" id="RMV-Sg-QUo"/>
+                                    <constraint firstItem="M2I-FN-xY8" firstAttribute="top" secondItem="D68-S7-h1F" secondAttribute="top" id="XON-5x-zpJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="M2I-FN-xY8" secondAttribute="trailing" id="aep-nn-avC"/>
+                                    <constraint firstItem="M2I-FN-xY8" firstAttribute="leading" secondItem="D68-S7-h1F" secondAttribute="leading" id="dVk-ih-24g"/>
+                                    <constraint firstAttribute="bottom" secondItem="M2I-FN-xY8" secondAttribute="bottom" id="ncn-Nz-6UZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="M2I-FN-xY8" secondAttribute="trailing" id="zVJ-o7-Bjz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="87Z-pH-YfE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D68-S7-h1F" firstAttribute="top" secondItem="87Z-pH-YfE" secondAttribute="top" id="16Q-8S-iP3"/>
+                            <constraint firstItem="M2I-FN-xY8" firstAttribute="width" secondItem="bRL-qJ-sbS" secondAttribute="width" id="89c-pc-IgB"/>
+                            <constraint firstItem="D68-S7-h1F" firstAttribute="bottom" secondItem="87Z-pH-YfE" secondAttribute="bottom" id="C14-wW-KDS"/>
+                            <constraint firstItem="D68-S7-h1F" firstAttribute="leading" secondItem="87Z-pH-YfE" secondAttribute="leading" id="KNl-pP-op2"/>
+                            <constraint firstItem="D68-S7-h1F" firstAttribute="trailing" secondItem="87Z-pH-YfE" secondAttribute="trailing" id="Lk5-AQ-yLd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dr-ss-8XB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IIi-Ff-kws">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a0r-BQ-9gW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="edh-RY-Bie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Color: 202020"/>
+                        <color key="tintColor" name="Color: DEDEDE"/>
+                        <color key="barTintColor" name="Color: 202020"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wae-cG-Gud"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYX-BB-M3L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow" width="15" height="25"/>
+        <image name="email" width="23" height="18"/>
+        <image name="facebook" width="27.5" height="27.5"/>
+        <image name="iconHayuk" width="30" height="26"/>
+        <image name="image1" width="366" height="577"/>
+        <image name="image2" width="366" height="600"/>
+        <image name="image3" width="366" height="600"/>
+        <image name="instagram" width="22.5" height="22.5"/>
+        <image name="line" width="414" height="1"/>
+        <image name="linkedin" width="22.5" height="22.5"/>
+        <image name="photoProfile" width="280" height="280"/>
+        <image name="profileIcon" width="25.5" height="25"/>
+        <image name="shape" width="383" height="342"/>
+        <image name="topBar" width="323" height="65"/>
+        <image name="whatsapp" width="22.5" height="22.5"/>
+        <namedColor name="Color: 202020">
+            <color red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color: 959595">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color: DEDEDE">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
