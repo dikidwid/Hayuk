@@ -18,6 +18,7 @@ In detail scene, there will be several type of steps:
 ## Concept Utilized
 This application invloved some UIKit concepts:
 - Auto Layout
+- Have Light Mode and Dark Mode
 - IBOutlet
 - IBAction
 - UITableView
@@ -38,4 +39,17 @@ This application invloved some UIKit concepts:
 
 <p align = "center">
 <img src="Images/profile1.png" width="500"/> <img src="Images/profile2.png" width="500"/>
+</p>
+
+## Dark Mode Screenshots
+<p align = "center">
+<img src="Images/darkhome1.png" width="334"/> <img src="Images/darkhome2.png" width="334"/> <img src="Images/darkhome3.png" width="334"/>
+</p>
+
+<p align = "center">
+<img src="Images/darkdetail1.png" width="249"/> <img src="Images/darkdetail2.png" width="249"/> <img src="Images/darkdetail3.png" width="249"/> <img src="Images/darkdetail4.png" width="249"/>
+</p>
+
+<p align = "center">
+<img src="Images/darkprofile1.png" width="500"/> <img src="Images/darkprofile2.png" width="500"/>
 </p>
