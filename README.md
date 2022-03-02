@@ -37,5 +37,5 @@ This application invloved some UIKit concepts:
 </p>
 
 <p align = "center">
-<img src="Images/profile1.png" width="334"/> <img src="Images/profile2.png" width="334"/> <img src="Images/profile3.png" width="334"/>
+<img src="Images/profile1.png" width="500"/> <img src="Images/profile2.png" width="500"/>
 </p>
