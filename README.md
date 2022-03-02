@@ -17,6 +17,7 @@ In detail scene, there will be several type of steps:
 
 ## Concept Utilized
 This application invloved some UIKit concepts:
+- Launchscreen with icon
 - Auto Layout
 - Have Light Mode and Dark Mode
 - IBOutlet
