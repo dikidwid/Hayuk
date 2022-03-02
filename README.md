@@ -26,3 +26,16 @@ This application invloved some UIKit concepts:
 - UIAlert (to enter the user name when the first app launched)
 - UITextField
 - UIButton (to move on directly to an app according to the symbol on it)
+
+## Light Mode Screenshots
+<p align = "center">
+<img src="Images/home1.png" width="334"/> <img src="Images/home2.png" width="334"/> <img src="Images/home3.png" width="334"/>
+</p>
+
+<p align = "center">
+<img src="Images/detail1.png" width="249"/> <img src="Images/detail2.png" width="249"/> <img src="Images/detail3.png" width="249"/> <img src="Images/detail4.png" width="249"/>
+</p>
+
+<p align = "center">
+<img src="Images/profile1.png" width="334"/> <img src="Images/profile2.png" width="334"/> <img src="Images/profile3.png" width="334"/>
+</p>
