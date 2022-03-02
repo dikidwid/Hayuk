@@ -34,25 +34,26 @@ This application invloved some UIKit concepts:
 </p>
 
 <p align = "center">
-<img src="Images/detail1.png" width="373"/> <img src="Images/detail2.png" width="373"/> 
+<img src="Images/detail1.png" width="412"/> <img src="Images/detail2.png" width="412"/> 
 </p>
 <p align = "center">
-<img src="Images/detail3.png" width="373"/> <img src="Images/detail4.png" width="373"/>
+<img src="Images/detail3.png" width="412"/> <img src="Images/detail4.png" width="412"/>
 </p>
 
 <p align = "center">
-<img src="Images/profile1.png" width="500"/> <img src="Images/profile2.png" width="500"/>
+<img src="Images/profile1.png" width="412"/> <img src="Images/profile2.png" width="412"/>
 </p>
 
 ## Dark Mode Screenshots
 <p align = "center">
-<img src="Images/darkhome1.png" width="334"/> <img src="Images/darkhome2.png" width="334"/> <img src="Images/darkhome3.png" width="334"/>
+<img src="Images/darkhome1.png" width="412"/> <img src="Images/darkhome2.png" width="412"/>
 </p>
 
 <p align = "center">
-<img src="Images/darkdetail1.png" width="249"/> <img src="Images/darkdetail2.png" width="249"/> <img src="Images/darkdetail3.png" width="249"/> <img src="Images/darkdetail4.png" width="249"/>
+<img src="Images/darkdetail1.png" width="412"/> <img src="Images/darkdetail2.png" width="412"/> 
+<img src="Images/darkdetail3.png" width="412"/> <img src="Images/darkdetail4.png" width="412"/>
 </p>
 
 <p align = "center">
-<img src="Images/darkprofile1.png" width="500"/> <img src="Images/darkprofile2.png" width="500"/>
+<img src="Images/darkprofile1.png" width="412"/> <img src="Images/darkprofile2.png" width="412"/>
 </p>
