@@ -34,7 +34,10 @@ This application invloved some UIKit concepts:
 </p>
 
 <p align = "center">
-<img src="Images/detail1.png" width="249"/> <img src="Images/detail2.png" width="249"/> <img src="Images/detail3.png" width="249"/> <img src="Images/detail4.png" width="249"/>
+<img src="Images/detail1.png" width="250"/> <img src="Images/detail2.png" width="250"/> 
+</p>
+<p align = "center">
+<img src="Images/detail3.png" width="250"/> <img src="Images/detail4.png" width="250"/>
 </p>
 
 <p align = "center">
